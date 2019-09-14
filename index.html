@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+      <form action="index.html" method="post">
+        
+        <h1>Sign Up</h1>
+        
+        <fieldset>
+          
+          <legend><span class="number">1</span> Your basic info</legend>
+          
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name">
+          
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="user_email">
+          
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="user_password">
+          
+          <label>Age:</label>
+          <input type="radio" id="under_13" value="under_13" name="user_age" ><label for="under_13" class="light">under 13</label>
+
+          <br>
+          <input type="radio" id="over_13" value="under_13" name="user_age" ><label for="over_13" class="light">13 or Older</label>
+        </fieldset>
+        
+        <fieldset>
+          
+          <legend><span class="number">2</span> Your profile</legend>
+          
+          <label for="bio">Biography:</label>
+          <textarea id="bio" name="user_bio"></textarea>
+          
+          <label for="job">Job role</label>
+          <select id="job" name="user_job">
+            <optgroup label="Web">
+              <option value="frontend_devloper">Front-end developer</option>
+              <option value="Javascript_devloper">Javascript developer</option>
+              <option value="php_devloper">php developer</option>
+            </optgroup>
+            <optgroup label="Designer">
+              <option value="ux_designer">UX designer</option>
+            </optgroup>
+          </select>
+
+          <label>Interst</label>
+          <input type="checkbox" id="development" value="interst_developemt" name="user_interst"><label for="development" class="light">Development</label>
+          <br>
+          <input type="checkbox" id="design" value="interst_design" name="user_interst"><label for="design" class="light">Design</label>
+          <br>
+          <input type="checkbox" id="business" value="interst_business" name="user_interst"><label for="business" class="light">Business</label>
+        </fieldset>
+          
+        <button type="submit">Sign Up</button>
+      </form>
+      
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
